@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nav Bar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link href='d33wubrfki0l68.cloudfront.net/css/ebd73d42a5312a6955126893910804045eedd212/main.css' rel='stylesheet'/>
+  <link href='d33wubrfki0l68.cloudfront.net/css/d1ac66afbd857e1cc55aa077b349eeee51af2f5f/mobile.css' media='screen and (max-width: 1200px)' rel='stylesheet'/>
+
+
+
+
+
+  <style>
+  
+
+    .para2 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 19px;
+    }
+
+    @media (max-width: 800px) {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .logo_img {
+        width: 20px;
+        height: 20px;
+      }
+
+      body {
+        font-size: 15px !important;
+      }
+      .svg_icon{
+        width: 50px !important;
+        height: 50px !important;
+      }
+
+    }
+
+    @media (max-width: 400px) {
+      .card {
+        width: 210px !important;
+        font-size: 15px !important;
+      }
+      .card-text{
+        font-size: 15px;
+      }
+      .cent_img {
+        width: 50px;
+        height: 60px;
+      }
+      .svg_icon{
+        width: 40px !important;
+        height:40px !important;
+      }
+    }
+
+    .card {
+      opacity: 0.9;
+    }
+
+    .card:hover {
+      box-shadow: 5px 5px 10px black;
+      transition: 0.2s ease-in-out;
+      opacity: 1;
+    }
+
+    .bgg {
+      background-image: url("./secondary-hero.jpg");
+      /* background-image: linear-gradient(30deg, blue, rgb(255, 84, 255), rgb(251, 161, 176)); */
+      background-size: 120% 120%;
+      animation: gradient2 5s ease-in-out infinite;
+    }
+
+
+    .upnav {
+
+      background-color: rgb(0, 0, 0);
+      /* color: black; */
+
+    }
+
+
+    .posts_home {
+      /* background-image: linear-gradient(217deg, rgba(242, 0, 255, 0.878), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(7, 135, 233, 0.8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 180, 141, .8), rgba(0, 0, 255, 0) 70.71%); */
+      background-image: url("./aws-summit-2022.jpg");
+
+      background-size: 300% 200%;
+      animation: gradient 10s ease infinite;
+      /* background-image: linear-gradient(100deg, rgb(245, 129, 251), rgb(7, 233, 214), rgb(0, 180, 141)); */
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 50% 70%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @keyframes gradient2 {
+      0% {
+        background-position: 0% 30%;
+      }
+
+      50% {
+        background-position: 50% 90%;
+      }
+
+      100% {
+        background-position: 0% 30%;
+      }
+    }
+
+    .navbar {
+      font-size: 18px;
+    }
+
+    .btn-primary {
+      box-shadow: 4px 4px rgb(0, 0, 136);
+    }
+
+    .btn-success {
+      box-shadow: 4px 4px rgb(0, 47, 0);
+    }
+
+    .footer {}
+
+    .nav_item_mx-2 a {
+  position: relative;
+}
+ 
+.nav_item_mx-2 a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+.nav_item_mx-2 a:hover::before {
+  transform: scaleX(1);
+}
+
+.menu[data-animation="center"] a::before {
+  transform-origin: center;
+}
+
+.dropdown-menu{
+  border-radius: 10px;
+   display: none;
+   position: absolute;
+   background-color: #000000;
+   min-width: 75px;
+   box-shadow: 5px 5px 45px ;
+   z-index: 1;
+}
+.dropdown:hover .dropdown-menu {
+	
+    display: block;
+    margin-top: 1px 20px;
+	padding: 10px 25px;  
+	
+}
+.dropdown-menu {
+  border-radius: 10px;
+   display: none;
+   position: absolute;
+   background-color: #000000;
+   min-width: 75px;
+   box-shadow: 9px 9px 80px 10px rgba(255, 255, 255, 0.2);
+   z-index: 1;
+}
+.dropdown-menu a {
+   float: none;
+   color: rgb(255, 255, 255);
+   padding: 10px 10px;
+   text-decoration: none;
+   display: block;
+   text-align: center;
+}
+.dropdown-menu > li > a:hover {
+    background-image: none;
+    background-color:#000000;
+	color: #ffffff;
+}
+
+.button {
+  background-color: #2a2a2a; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 30px;
+  cursor: pointer;
+  width: 150px;
+  height: 80px;
+  
+  
+
+
+}
+.button4 {border-radius: 12px;}
+
+  </style>
+  
+
+
+</head>
+
+<body style="background-color: rgb(26, 25, 25);">
+  <div class="upnav ">
+    <nav role="navigation" class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black;">
+      <div data-aos="zoom-in-left" data-aos-duration="800" class="container-fluid ">
+        <a class="navbar-brand " href="index.html"> <img src="WiOS_White_NoBG.png" class="mb-1 logo_img" height="30px"
+            width="30px" alt="">&nbsp;Wios</a>
+
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+    
+
+            
+        <!-- <label class="nav__hamburger-menu" for="nav__toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" >
+            <span class="nav__hamburger-inner"></span>
+            
+          </label> -->
+
+
+
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul data-aos="zoom-in-left" data-aos-duration="800" class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+            <li class="nav_item_mx-2">
+              <a class="nav-link" aria-current="page" href="">Home</a>
+            </li>
+            <li class="nav_item_mx-2">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav_item_mx-2">
+              <a class="nav-link" href="/dist/index.html">Events</a>
+            </li>
+            <li class="nav_item_mx-2">
+              <a class="nav-link" href="#community">Community</a>
+            </li>
+            <li class="nav-item dropdown mx-2">
+              <a class="nav-link dropdown-toggle">
+                Members
+
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav_item_mx-2"><a class="dropdown-item" href="members_2022_1.html">2022 &nbsp; →</a></li>
+                <li class="nav_item_mx-2"><a class="dropdown-item" href="members_2021_1.html">2021 &nbsp; →</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <div>
+
+    <div class="main__content-container">
+        <main>
+          
+  <div class="page__container">
+      <h1 class="page__group-title--blog">Groups</h1>
+      <div class="page__group-content">
+          <div>
+              <ul class="page__link-list">
+                    <div data-aos="flip-left" data-aos-duration="1000" >
+                        
+
+                            <a href="reactx-copy/index.html" class="link-list__item">
+                                <li>
+                                    <img 
+                                      class="page__preview-banner" 
+                                      src="AI.jpeg" 
+                                      alt="blog post banner"
+                                      style="width:200px;height: 200px;"
+                                    />
+                                    
+                                  
+                                    <h2>Demystify Artificial Intelligence &amp; Machine Learning</h2>
+                                  
+                                    <button class="button button4" href="./AI.jpeg">
+                                      Join Now -->                      
+                                    </button>
+                                  
+                                    
+                                    
+                                </li>
+                              </a>
+                                    
+                    
+                </div>
+                                  
+                <div data-aos="flip-left" data-aos-duration="1000" >
+                    <a href="reactx-ep-2/index.html" class="link-list__item">
+                        <li>
+                            <img 
+                              class="page__preview-banner" 
+                              src="ReactX-2/banner.png" 
+                              alt="blog post banner"
+                            />
+                            <h2>ReactX - Build an Job Portal with React and NodeJS, Ep. 2 </h2>
+                            
+                            <span>In this workshop we’ll be building a simple Job Portal with ReactJs and NodeJS </span>
+                            
+                            <p class="link-list__meta">
+                              On 19 
+                              
+         December
+        
+    ,
+                              2021
+                            </p>
+                            
+                        </li>
+                      </a>
+                   </div>
+                                  
+                   <div data-aos="flip-left" data-aos-duration="1000" >
+                    <a href="reactx/index.html" class="link-list__item">
+                        <li>
+                            <img 
+                              class="page__preview-banner" 
+                              src="ReactX/banner.png" 
+                              alt="blog post banner"
+                            />
+                            <h2>ReactX - Build an escape room game with React</h2>
+                            <span>In this workshop we’ll be building a simple escape room game with ReactJs </span>
+                            
+                            <p class="link-list__meta">
+                              On 14 
+                              
+         November 
+        
+    ,
+                              2021
+                            </p>
+                        </li>
+                      </a>
+                   </div>
+                   <div data-aos="flip-left" data-aos-duration="1000" >
+                                     
+                    <a href="hacktoberfest-techcast-ep4/index.html" class="link-list__item">
+                        <li>
+                            <img 
+                              class="page__preview-banner" 
+                              src="Hacktoberfest-TechCast-Ep4/event_poster.png" 
+                              alt="blog post banner"
+                            />
+                            <h2>Hacktoberfest 2021 - TechCast, Ep. 4</h2>
+                            <span>Talk on Data Analytics and Machine Learning, a fun quiz and a Q&amp;A session with the speaker </span>
+                            
+                            <p class="link-list__meta">
+                              On 11 
+                              
+         October
+        
+    ,
+                              2021
+                            </p>
+                        </li>
+                      </a>
+                         </div>
+                                  
+
+                         <div data-aos="flip-left" data-aos-duration="1000" >
+                    <a href="wistia-ux-hands-on-workshop/index.html" class="link-list__item">
+                        <li>
+                            <img 
+                              class="page__preview-banner" 
+                              src="WISTIA-UX-hands-on-workshop/event_poster.png" 
+                              alt="blog post banner"
+                            />
+                            <h2>WISITA - UI&#x2F;UX Hands on Workshop</h2>
+                            <span>Ice breaker session, games and UI/UX Hands on session </span>
+                            
+                            <p class="link-list__meta">
+                              On 22 
+                              
+         August
+        
+    ,
+                              2021
+                            </p>
+                        </li>
+                      </a>
+                 </div>
+                  
+              </ul>
+
+
+
+              
+          </div>
+      </div>
+  </div>
+  
+        </main>
+        
+  
+      </div>
+
+  </div>
+
+
+
+
+
+</body>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  console.log("chenc-1")
+  // document.body.setAttribute("style","backgroundColor:linear-gradient(100deg,rgb(80, 84, 118),rgba(17, 73, 170, 0.64)) ");
+  // console.log(document.body.style.backgroundColor="linear-gradient(100deg,rgb(106, 117, 234),rgb(196, 196, 196));")
+  // document.body.style.backgroundColor="linear-gradient(100deg,rgb(106, 117, 234),rgb(196, 196, 196)); !important"
+  var counter = 1;
+  function theme() {
+
+    if (counter == 1) {
+      console.log("pressed")
+      // document.body.setAttribute("style","backgroundColor:linear-gradient(100deg,rgb(80, 84, 118),rgba(17, 73, 170, 0.64)) !important");
+      document.body.style.backgroundColor = "linear-gradient(100deg,rgb(80, 84, 118),rgba(17, 73, 170, 0.64));"
+      document.body.style.color = "white"
+      document.getElementById("dark_image").setAttribute("src", "./WiOS_White_NoBG.png");
+      document.getElementById("dark_image2").setAttribute("src", "./WiOS_White_NoBG.png");
+      document.getElementById("change_card").style.backgroundColor = "black"
+
+      // document.body.style.backgroundColor = "linear-gradient(100deg,rgb(80, 84, 118),rgba(17, 73, 170, 0.64)) !important"
+      counter = 2;
+    }
+    else {
+      console.log("pressed")
+      document.body.style.color = "black"
+      document.getElementById("change_card").style.backgroundColor = "white"
+      document.getElementById("dark_image").setAttribute("src", "./logo-max-size.png");
+      document.getElementById("dark_image2").setAttribute("src", "./logo-max-size.png");
+      document.body.style.backgroundColor = ""
+      counter = 1;
+    }
+
+
+  }
+</script>
+
+</html>
