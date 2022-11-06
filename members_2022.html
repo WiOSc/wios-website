@@ -11,12 +11,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-    <link rel="icon" href="./logo-max-size0636.png">
+  <link rel="icon" href="./logo-max-size0636.png">
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <style>
-    body{
+    body {
       user-select: none;
     }
+
     .navbar {
       font-size: 18px;
     }
@@ -37,7 +38,7 @@
     }
 
     body {
-      
+
       background-image: url("./blue-light-streak-background.jpg");
       background-position: center;
       background-size: cover;
@@ -48,7 +49,7 @@
 
     .admins {
       background: url("./10340256_13077.jpg");
-      
+
       background-repeat: no-repeat;
       height: 100%;
       background-size: cover;
@@ -110,7 +111,8 @@
 
       /* transform: translate(-10px,-10px); */
     }
-    .technical{
+
+    .technical {
       background: url("./12067355_4884273.jpg");
       background-repeat: no-repeat;
       height: 100%;
@@ -118,7 +120,8 @@
       /* background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255)); */
       box-shadow: 0 0 15px rgb(65, 65, 65);
     }
-    .events{
+
+    .events {
       background: url("./13182208_5166950.jpg");
       background-repeat: no-repeat;
       height: 100%;
@@ -127,7 +130,8 @@
       box-shadow: 0 0 15px rgb(65, 65, 65);
 
     }
-    .creative{
+
+    .creative {
       background: url("./11055362_1129.jpg");
       background-repeat: no-repeat;
       height: 100%;
@@ -136,7 +140,8 @@
       box-shadow: 0 0 15px rgb(65, 65, 65);
 
     }
-    .Documentation{
+
+    .Documentation {
       background: url("./10852043_19425921.jpg");
       background-repeat: no-repeat;
       height: 100%;
@@ -145,214 +150,219 @@
       box-shadow: 0 0 15px rgb(65, 65, 65);
 
     }
-    .card_saroj{
+
+    .card_saroj {
       background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));
     }
+
     .nav_item_mx-2 a {
-            position: relative;
-        }
+      position: relative;
+    }
 
-        .nav_item_mx-2 a::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
-            z-index: 1;
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.5s ease-in-out;
-        }
+    .nav_item_mx-2 a::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+      z-index: 1;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.5s ease-in-out;
+    }
 
-        .nav_item_mx-2 a:hover::before {
-            transform: scaleX(1);
-        }
+    .nav_item_mx-2 a:hover::before {
+      transform: scaleX(1);
+    }
 
-        .menu[data-animation="center"] a::before {
-            transform-origin: center;
-        }
+    .menu[data-animation="center"] a::before {
+      transform-origin: center;
+    }
 
-        .dropdown-menu {
-            border-radius: 10px;
-            display: none;
-            position: absolute;
-            background-color: #000000;
-            min-width: 75px;
-            box-shadow: 5px 5px 45px;
-            z-index: 1;
-        }
+    .dropdown-menu {
+      border-radius: 10px;
+      display: none;
+      position: absolute;
+      background-color: #000000;
+      min-width: 75px;
+      box-shadow: 5px 5px 45px;
+      z-index: 1;
+    }
 
-        .dropdown:hover .dropdown-menu {
-            /* color: #19f5ea !important; */
-            display: block;
-            margin-top: 1px 20px;
-            padding: 10px 25px;
+    .dropdown:hover .dropdown-menu {
+      /* color: #19f5ea !important; */
+      display: block;
+      margin-top: 1px 20px;
+      padding: 10px 25px;
 
-        }
+    }
 
-        .dropdown-menu {
-            border-radius: 10px;
-            display: none;
-            position: absolute;
-            background-color: #000000;
-            min-width: 75px;
-            box-shadow: 9px 9px 80px 10px rgba(255, 255, 255, 0.2);
-            z-index: 1;
-        }
+    .dropdown-menu {
+      border-radius: 10px;
+      display: none;
+      position: absolute;
+      background-color: #000000;
+      min-width: 75px;
+      box-shadow: 9px 9px 80px 10px rgba(255, 255, 255, 0.2);
+      z-index: 1;
+    }
 
-        .dropdown-menu a {
-            float: none;
-            color: rgb(255, 255, 255);
-            padding: 10px 10px;
-            text-decoration: none;
-            display: block;
-            text-align: center;
-        }
+    .dropdown-menu a {
+      float: none;
+      color: rgb(255, 255, 255);
+      padding: 10px 10px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
 
-        .dropdown-menu>li>a:hover {
-            background-image: none;
-            background-color: #000000;
-            color: #ffffff;
-        }
+    .dropdown-menu>li>a:hover {
+      background-image: none;
+      background-color: #000000;
+      color: #ffffff;
+    }
 
-        p {
-            color: #ffffff;
-        }
+    p {
+      color: #ffffff;
+    }
+
+    .card-img {
+      border-radius: 50%;
+      aspect-ratio: 1 / 1;
+    }
   </style>
 </head>
 
 <body>
   <div class="upnav">
     <nav role="navigation" class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black;">
-        <div data-aos="zoom-in-left" data-aos-duration="800" class="container-fluid ">
-            <a class="navbar-brand " href="./index.html"> <img
-                    src="WiOS_White_NoBG.png" class="mb-1 logo_img" height="30px" width="30px" alt="">&nbsp;WiOS</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div data-aos="zoom-in-left" data-aos-duration="800" class="container-fluid ">
+        <a class="navbar-brand " href="./index.html"> <img src="WiOS_White_NoBG.png" class="mb-1 logo_img" height="30px"
+            width="30px" alt="">&nbsp;WiOS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <ul data-aos="zoom-in-left" data-aos-duration="800" class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul data-aos="zoom-in-left" data-aos-duration="800" class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-                    <li class="nav_item_mx-2">
-                        <a class="nav-link" aria-current="page"
-                            href="./index.html">Home</a>
-                    </li>
-                    <li class="nav_item_mx-2">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    
-                    <li class="nav_item_mx-2">
-                        <a class="nav-link" href="./dist/index.html">Events</a>
-                    </li>
-                    <li class="nav_item_mx-2">
-                        <a class="nav-link" href="./LTS/index.html">LTS</a>
-                    </li>
-                    <li class="nav_item_mx-2">
-                        <a class="nav-link"
-                            href="./index.html#community">Community</a>
+            <li class="nav_item_mx-2">
+              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav_item_mx-2">
+              <a class="nav-link" href="#about">About</a>
+            </li>
 
-                    </li>
+            <li class="nav_item_mx-2">
+              <a class="nav-link" href="./dist/index.html">Events</a>
+            </li>
+            <li class="nav_item_mx-2">
+              <a class="nav-link" href="./LTS/index.html">LTS</a>
+            </li>
+            <li class="nav_item_mx-2">
+              <a class="nav-link" href="./index.html#community">Community</a>
+
+            </li>
 
 
-                    <li class="nav-item dropdown mx-2">
-                        <a class="nav-link dropdown-toggle">
-                            Members
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="nav_item_mx-2"><a class="dropdown-item"
-                                    href="./members_2022.html">2022 &nbsp; →</a>
-                            </li>
-                            <li class="nav_item_mx-2"><a class="dropdown-item"
-                                    href="./members_2021.html">2021 &nbsp; →</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+            <li class="nav-item dropdown mx-2">
+              <a class="nav-link dropdown-toggle">
+                Members
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav_item_mx-2"><a class="dropdown-item" href="./members_2022.html">2022 &nbsp; →</a>
+                </li>
+                <li class="nav_item_mx-2"><a class="dropdown-item" href="./members_2021.html">2021 &nbsp; →</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-</div>
+  </div>
   <div class="lower_members mt-5 pt-4">
     <h1 class="text-center text-light" data-aos="zoom-in-down">Members of 2022</h1>
     <div class="p-3" data-aos="zoom-in">
       <div class="row">
         <div class="col-md-4  mb-md-5 mt-md-auto p-3 col-sm-6 col-12">
           <div class="card card_saroj ms-2" data-aos="zoom-in" data-aos-duration="2000">
-          <div class="card-body">
-            <h5 class="card-title  text-center ">The Co-Ordinator of WiOS, Dr. Saroj Kumar Panigrahy,</h5>
-            <p class="text-center  card-text">His areas of expertise are Wireless Body Area Networks, Wireless Sensor Networks, IoT and Cryptography. </p>
-          </div>
-        </div></div>
-        <div class="col-md-4  p-3 col-sm-6 col-12">
-            <div class="card admins  mx-auto " data-aos="flip-up" data-aos-duration="1000" style="width: 240px; ">
-              <img src="./2021-22/saroj.png" alt="" class="card-img"  style="height: 230px;">
-              <div class="card-body">
-                <h5 class="card-title  text-center ">Dr. Saroj Kumar Panigrahy</h5>
-                <p class="text-center  card-text">Club Coordinator</p>
-              </div>
+            <div class="card-body">
+              <h5 class="card-title  text-center ">The Co-Ordinator of WiOS, Dr. Saroj Kumar Panigrahy,</h5>
+              <p class="text-center  card-text">His areas of expertise are Wireless Body Area Networks, Wireless Sensor
+                Networks, IoT and Cryptography. </p>
             </div>
+          </div>
+        </div>
+        <div class="col-md-4  p-3 col-sm-6 col-12">
+          <div class="card admins  mx-auto " data-aos="flip-up" data-aos-duration="1000" style="width: 240px; ">
+            <img src="./2021-22/saroj.png" alt="" class="card-img" style="height: 230px;">
+            <div class="card-body">
+              <h5 class="card-title  text-center ">Dr. Saroj Kumar Panigrahy</h5>
+              <p class="text-center  card-text">Club Coordinator</p>
+            </div>
+          </div>
 
         </div>
         <div class="col-md-4   p-3 col-sm-6 col-12">
           <div class="card card_saroj" data-aos="zoom-in" data-aos-duration="2000">
-          <div class="card-body">
-            <h5 class="card-title  text-center ">The Associate-Dean of SCOPE, VIT-AP University</h5>
-            <p class="text-center  card-text">He relishes the challenges of teaching and is passionate about going above and beyond to encourage students to think out of box and excel in their endeavors. </p>
+            <div class="card-body">
+              <h5 class="card-title  text-center ">The Associate-Dean of SCOPE, VIT-AP University</h5>
+              <p class="text-center  card-text">He relishes the challenges of teaching and is passionate about going
+                above and beyond to encourage students to think out of box and excel in their endeavors. </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container admins p-2" data-aos="fade-right">
-      <div class="row mt-3 mx-auto ">
-        <h1 class="text-light">Administration</h1>
-        <hr class="divider_line" data-aos="fade-right">
-        <div class="col-sm-6 col-6 col-md-3  p-2">
-          <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
-            style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./mrbean.jpg" alt="" class="card-img p-4 mx-auto" style="width: 80%; border-radius: 50%;">
-            <div class="card-body">
-              <h4 class="card-title  text-center ">BEAN Akka</h4>
-              <h6 class="text-center  card-text">Namaskaram</h6>
-            </div>
-            <div class="card-footer  d-flex justify-content-center">
-              <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+      <div class="container admins p-2" data-aos="fade-right">
+        <div class="row mt-3 mx-auto ">
+          <h1 class="text-light">Administration</h1>
+          <hr class="divider_line" data-aos="fade-right">
+          <div class="col-sm-6 col-6 col-md-3  p-2">
+            <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
+              style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
+              <img src="./mrbean.jpg" alt="" class="card-img p-4 mx-auto">
+              <div class="card-body">
+                <h4 class="card-title  text-center ">BEAN Akka</h4>
+                <h6 class="text-center  card-text">Namaskaram</h6>
+              </div>
+              <div class="card-footer  d-flex justify-content-center">
+                <div class="member_links">
+                  <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-6 col-6 col-md-3  p-2">
-          <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
-            style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/Vaishnavi.jpeg" alt="" class="card-img p-4 mx-auto" style="border-radius: 50%;">
-            <div class="card-body">
-              <h4 class="card-title  text-center ">Vaishnavi Penumerthy</h4>
-              <h6 class="text-center  card-text">Chairperson</h6>
-            </div>
-            <div class="card-footer  d-flex justify-content-center">
-              <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+          <div class="col-sm-6 col-6 col-md-3  p-2">
+            <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
+              style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
+              <img src="./2022-23/Vaishnavi.jpeg" alt="" class="card-img p-4 mx-auto" style="border-radius: 50%;">
+              <div class="card-body">
+                <h4 class="card-title  text-center ">Vaishnavi Penumerthy</h4>
+                <h6 class="text-center  card-text">Chairperson</h6>
+              </div>
+              <div class="card-footer  d-flex justify-content-center">
+                <div class="member_links">
+                  <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-6 col-6 col-md-3  p-2">
-          <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
-            style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/sathwik.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
-            <div class="card-body">
+          <div class="col-sm-6 col-6 col-md-3  p-2">
+            <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
+              style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
+              <img src="./2022-23/sathwik.jpg" alt="" class="card-img p-4 mx-auto" ">
+              <div class=" card-body">
               <h4 class="card-title  text-center ">Abbaraju Sai Sathwik </h4>
               <h6 class="text-center  card-text">Vice President</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a ><img src="https://img.icons8.com/fluency/40/000000/link.png" /></a>
+                <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a><img src="https://img.icons8.com/fluency/40/000000/link.png" /></a>
               </div>
             </div>
           </div>
@@ -360,7 +370,7 @@
         <div class="col-sm-6 col-6 col-md-3  p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2021-22/manvitha.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2021-22/manvitha.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">E Godha Manvitha</h4>
               <h6 class="text-center  card-te
@@ -369,7 +379,8 @@
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
                 <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://www.instagram.com/_manvi.tha/	"><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
+                <a href="https://www.instagram.com/_manvi.tha/	"><img
+                    src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -377,15 +388,15 @@
         <div class="col-sm-6 col-6 col-md-3  p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Anisha.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Anisha.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Anisha Kumar</h4>
               <h6 class="text-center  card-text">Director</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -393,7 +404,7 @@
         <div class="col-sm-6 col-6 col-md-3  p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/Puneeth.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Puneeth.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Puneet Kataria</h4>
               <h6 class="text-center  card-text">Secretary</h6>
@@ -401,7 +412,7 @@
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
                 <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+
               </div>
             </div>
           </div>
@@ -409,15 +420,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Ruthwik.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Ruthwik.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">V L Sai Ruthwik</h4>
               <h6 class="text-center  card-text">Treasurer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -425,15 +436,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Abdul.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Abdul.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Abdul Rab Badruddin</h4>
               <h6 class="text-center  card-text">Head of Public Relations</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -441,15 +452,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2021-22/member-blank.png" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2021-22/member-blank.png" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">J Lakshmi Bala Rama Krishna</h4>
               <h6 class="text-center  card-text">Associate of Public Relations</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -465,14 +476,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/vijay.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/vijay.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Vijay Narayan</h4>
               <h6 class="text-center  card-text">Technical Lead</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/vijay-reddy-160mv"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.linkedin.com/in/vijay-reddy-160mv"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
                 <!-- <a href="https://batsense.net/"><img src="https://img.icons8.com/fluency/40/000000/link.png" /></a> -->
               </div>
             </div>
@@ -481,14 +493,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/akhil.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/akhil.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">S Naga Sai Akhilesh</h4>
               <h6 class="text-center  card-text">Technical Lead</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/saga-naga-sai-akhilesh-a244071b8"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.linkedin.com/in/saga-naga-sai-akhilesh-a244071b8"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
                 <!-- <a href=""><img src="https://img.icons8.com/fluency/40/000000/link.png" /></a> -->
               </div>
             </div>
@@ -497,14 +510,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/rahul.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/rahul.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Kolla Rahul</h4>
               <h6 class="text-center  card-text">Associate Technical Lead</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/rahul-kolla-7432431ba/"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.linkedin.com/in/rahul-kolla-7432431ba/"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
                 <!-- <a href="https://github.com/TheVoraciousReader	"><img src="https://img.icons8.com/glyph-neue/40/000000/github.png"/></a> -->
               </div>
             </div>
@@ -514,15 +528,16 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Kamal.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Kamal.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">P Kamal Teja</h4>
               <h6 class="text-center  card-text"> Web Developer Lead</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/kamal-teja"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a href="https://www.linkedin.com/in/kamal-teja"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -530,15 +545,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Harshita.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Harshita.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">A Harshitha</h4>
               <h6 class="text-center  card-text">Web Developer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -546,15 +561,17 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/ChiragAjay.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/ChiragAjay.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Chirag Ajay Jain</h4>
               <h6 class="text-center  card-text">Web Developer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="www.linkedin.com/in/chirag-jain-25a26a251"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://www.instagram.com/x_chiragjain_x"><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
+                <a href="www.linkedin.com/in/chirag-jain-25a26a251"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.instagram.com/x_chiragjain_x"><img
+                    src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -562,15 +579,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Kushal.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Kushal.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Kushal D J </h4>
               <h6 class="text-center  card-text">Web Developer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -578,15 +595,16 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Praneeth.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Praneeth.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">K Praneeth Kumar</h4>
               <h6 class="text-center  card-text"> Web Designer Lead</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/praneeth-kumar-kothamasu-178917233/"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a href="https://www.linkedin.com/in/praneeth-kumar-kothamasu-178917233/"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -594,15 +612,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Srikar.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Srikar.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">M V Srikar Janardhan Rao</h4>
               <h6 class="text-center  card-text">Web Designer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -610,15 +628,16 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/GeetaKrishna.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/GeetaKrishna.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">R Geeta Krishna</h4>
               <h6 class="text-center  card-text">Web Designer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/geeta-krishna-472172208/"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a href="https://www.linkedin.com/in/geeta-krishna-472172208/"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -626,15 +645,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Avinash.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Avinash.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Yarabothu Avinash</h4>
               <h6 class="text-center  card-text">Web Designer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -642,15 +661,17 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Deep.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Deep.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Deep Chakraborty</h4>
               <h6 class="text-center  card-text">Web Designer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/deep-chakraborty-ab421b253/?trk=public-profile-join-page"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://www.instagram.com/dada_of_porsudih/?hl=en"><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
+                <a href="https://www.linkedin.com/in/deep-chakraborty-ab421b253/?trk=public-profile-join-page"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.instagram.com/dada_of_porsudih/?hl=en"><img
+                    src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -658,15 +679,17 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/ChandraKiran.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/ChandraKiran.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Jinka Chandra Kiran </h4>
               <h6 class="text-center  card-text">AI & ML Mentor</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/chandra-kiran-jinka-b0aa44247"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://www.instagram.com/chandrakiran_2002?r=nametag"><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
+                <a href="https://www.linkedin.com/in/chandra-kiran-jinka-b0aa44247"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.instagram.com/chandrakiran_2002?r=nametag"><img
+                    src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -674,7 +697,7 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Hemanth.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Hemanth.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">P Hemanth Raga Sai</h4>
               <h6 class="text-center  card-text">AI & ML Mentor</h6>
@@ -682,7 +705,7 @@
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
                 <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+
               </div>
             </div>
           </div>
@@ -690,15 +713,16 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Lokesh.png" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Lokesh.png" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Kokkula Lokesh </h4>
               <h6 class="text-center  card-text">AI & ML Mentor</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/lokesh-kokkula-625409231"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a href="https://www.linkedin.com/in/lokesh-kokkula-625409231"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -706,15 +730,16 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2021-22/member-blank.png" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2021-22/member-blank.png" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Srinitya Suripeddi</h4>
               <h6 class="text-center  card-text">Technical Mentor</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/srinitya-suripeddi-889762210/"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a href="https://www.linkedin.com/in/srinitya-suripeddi-889762210/"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -722,15 +747,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/JanakiRam.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/JanakiRam.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">C Sai Janakiram</h4>
               <h6 class="text-center  card-text">Technical Mentor</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -738,15 +763,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/SaiTeja.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/SaiTeja.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Bheri Sai Teja</h4>
               <h6 class="text-center  card-text">Technical Developer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -754,15 +779,17 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/AnikateDe.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/AnikateDe.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Anikate De</h4>
               <h6 class="text-center  card-text">Technical Developer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/anikate-de-52256824b"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://www.instagram.com/anikate.de/"><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
+                <a href="https://www.linkedin.com/in/anikate-de-52256824b"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.instagram.com/anikate.de/"><img
+                    src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -770,15 +797,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Rushane.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Rushane.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Rushane Munganda</h4>
               <h6 class="text-center  card-text">Technical Developer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -786,15 +813,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Dhruv.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Dhruv.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Dhruv Shrivastav</h4>
               <h6 class="text-center  card-text">Technical Developer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -808,7 +835,7 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/Navneet.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Navneet.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Navneet Pratap Singh</h4>
               <h6 class="text-center  card-text">Event Lead</h6>
@@ -816,7 +843,7 @@
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
                 <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+
               </div>
             </div>
           </div>
@@ -824,15 +851,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Sravya.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Sravya.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">A Sai Sravyasree</h4>
               <h6 class="text-center  card-text">Associate Event Lead</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                 <!-- <a href=""><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a> -->
-                <a ><img src="https://img.icons8.com/fluency/40/000000/link.png" /></a> 
+                <!-- <a href=""><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a> -->
+                <a><img src="https://img.icons8.com/fluency/40/000000/link.png" /></a>
               </div>
             </div>
           </div>
@@ -840,15 +867,17 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/YashJain.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/YashJain.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Yash Jain</h4>
               <h6 class="text-center  card-text">Associate Event Lead</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                 <a href="https://www.linkedin.com/in/yash-jain-888348251"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://www.instagram.com/invites/contact/?i=gp3m1k00cwyg&utm_content=3sq6neh"><img src="https://img.icons8.com/fluency/40/000000/link.png" /></a> 
+                <a href="https://www.linkedin.com/in/yash-jain-888348251"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.instagram.com/invites/contact/?i=gp3m1k00cwyg&utm_content=3sq6neh"><img
+                    src="https://img.icons8.com/fluency/40/000000/link.png" /></a>
               </div>
             </div>
           </div>
@@ -856,15 +885,16 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/Jacklen.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Jacklen.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Jacklen James</h4>
               <h6 class="text-center  card-text">Associate Event Lead</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/jacklen-james-289a82251"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a ><img src="https://img.icons8.com/fluency/40/000000/link.png" /></a>
+                <a href="https://www.linkedin.com/in/jacklen-james-289a82251"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a><img src="https://img.icons8.com/fluency/40/000000/link.png" /></a>
               </div>
             </div>
           </div>
@@ -872,15 +902,16 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Suleman.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Suleman.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
-              <h4 class="card-title  text-center ">Pathan Abu Suleman Khan</h4>
+              <h4 class="card-title  text-center " style="white-space: nowrap; font-size: 1.3vw;">Pathan Abu Suleman
+                Khan</h4>
               <h6 class="text-center  card-text">Event Manager</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
-                
+                <a><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
+
               </div>
             </div>
           </div>
@@ -888,7 +919,7 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/Anusha.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Anusha.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Anusha Thalivarathil</h4>
               <h6 class="text-center  card-text">Event Manager</h6>
@@ -896,7 +927,8 @@
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
                 <!-- <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a> -->
-                <a href="https://instagram.com/ftnoosh?igshid=YmMyMTA2M2Y="><img src="https://img.icons8.com/fluency/40/000000/link.png" /></a>
+                <a href="https://instagram.com/ftnoosh?igshid=YmMyMTA2M2Y="><img
+                    src="https://img.icons8.com/fluency/40/000000/link.png" /></a>
               </div>
             </div>
           </div>
@@ -904,15 +936,17 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/RakshithS.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/RakshithS.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Rakshith S</h4>
               <h6 class="text-center  card-text">Event Manager</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="www.linkedin.com/in/rakshith-s-3062b5253"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://www.instagram.com/rakshith_rajan/?igshid=YmMyMTA2M2Y%3D"><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
+                <a href="www.linkedin.com/in/rakshith-s-3062b5253"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.instagram.com/rakshith_rajan/?igshid=YmMyMTA2M2Y%3D"><img
+                    src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -920,15 +954,17 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/AdityaVikram.png" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/AdityaVikram.png" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Aditya Vikram Singh</h4>
               <h6 class="text-center  card-text">Event Manager</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/aditya-vikram-singh-158339247/"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://www.instagram.com/adityavikramsinghh/?next=%2F"><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
+                <a href="https://www.linkedin.com/in/aditya-vikram-singh-158339247/"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.instagram.com/adityavikramsinghh/?next=%2F"><img
+                    src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -936,15 +972,17 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/ChiragAgrawal.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/ChiragAgrawal.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Chirag Agarwal</h4>
               <h6 class="text-center  card-text">Event Manager</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/chirag-agarwal-0b30b0253"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://www.instagram.com/chirag_agarwal._/"><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
+                <a href="https://www.linkedin.com/in/chirag-agarwal-0b30b0253"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.instagram.com/chirag_agarwal._/"><img
+                    src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -952,7 +990,7 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/MadhuSudhan.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/MadhuSudhan.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">A Madhu Sudhan</h4>
               <h6 class="text-center  card-text">Event Organiser</h6>
@@ -968,7 +1006,7 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/akshay.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/akshay.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Akshay V </h4>
               <h6 class="text-center  card-text">Event Organiser</h6>
@@ -976,7 +1014,7 @@
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
                 <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a ><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
+                <a><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -984,24 +1022,24 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Shahenaz.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Shahenaz.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Shahenaz Shaik</h4>
               <h6 class="text-center  card-text">Event Organiser</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
                 <!-- <a href="https://www.instagram.com/_manvi.tha/	"><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a> -->
               </div>
             </div>
           </div>
         </div>
-        
 
-        
-        
-        
+
+
+
+
       </div>
     </div>
     <div class="container creative mt-4 p-3" data-aos="fade-right">
@@ -1011,15 +1049,15 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/Abhiram.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Abhiram.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">K Naveen Abhiram</h4>
               <h6 class="text-center  card-text">Creative Lead</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                
+                <a><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+
               </div>
             </div>
           </div>
@@ -1027,15 +1065,17 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/HimanshuKumar.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/HimanshuKumar.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Himanshu Kumar Sah</h4>
               <h6 class="text-center  card-text">Graphic Designer Lead</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="www.linkedin.com/in/himanshu-kumar-sah-5a9167253"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://www.instagram.com/h1manshuuuuuuu/"><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png"/></a> 
+                <a href="www.linkedin.com/in/himanshu-kumar-sah-5a9167253"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.instagram.com/h1manshuuuuuuu/"><img
+                    src="https://img.icons8.com/fluency/40 /000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -1043,15 +1083,17 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/Ankitha.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Ankitha.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">V B Saravana Ankitha</h4>
               <h6 class="text-center  card-text">Graphic Designer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/ankitha-velagala-9aa21724a"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://instagram.com/ankithavelagala?igshid=YmMyMTA2M2Y="><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png"/></a>
+                <a href="https://www.linkedin.com/in/ankitha-velagala-9aa21724a"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://instagram.com/ankithavelagala?igshid=YmMyMTA2M2Y="><img
+                    src="https://img.icons8.com/fluency/40 /000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -1059,15 +1101,17 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/HemanthKumar.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/HemanthKumar.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Hemanth Kumar K R</h4>
               <h6 class="text-center  card-text">Graphic Designer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="www.linkedin.com/in/hemanth-kumar-k-r-366248253"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://www.instagram.com/freaky_fifast/"><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png"/></a>
+                <a href="www.linkedin.com/in/hemanth-kumar-k-r-366248253"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.instagram.com/freaky_fifast/"><img
+                    src="https://img.icons8.com/fluency/40 /000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -1075,14 +1119,14 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2021-22/member-blank.png" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2021-22/member-blank.png" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Chakrika Anousha</h4>
               <h6 class="text-center  card-text">Graphic Designer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png"/></a>
+                <a><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -1090,14 +1134,14 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/Muskan.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Muskan.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Muskan Singh</h4>
               <h6 class="text-center  card-text">Graphic Designer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png"/></a>
+                <a><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -1105,14 +1149,14 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/Nehasree.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Nehasree.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Nuthalapati Nehasree</h4>
               <h6 class="text-center  card-text">Associate Designer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png"/></a>
+                <a><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -1120,14 +1164,14 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/Ranvitha.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Ranvitha.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Gera Ranvitha</h4>
               <h6 class="text-center  card-text">Associate Designer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png"/></a>
+                <a><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -1135,14 +1179,14 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/Mithilesh.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Mithilesh.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">B Mithilesh</h4>
               <h6 class="text-center  card-text">Video Editor</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png"/></a>
+                <a><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -1150,14 +1194,14 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/Neha.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Neha.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Neha K Joseph</h4>
               <h6 class="text-center  card-text">Video Editor</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png"/></a>
+                <a><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -1165,14 +1209,14 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/Arjun.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Arjun.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Arjun Miraballi</h4>
               <h6 class="text-center  card-text">Video Editor</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a ><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png"/></a>
+                <a><img src="https://img.icons8.com/fluency/40 /000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -1186,7 +1230,7 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Lakshyagni.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Lakshyagni.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Lakshyagni Varma</h4>
               <h6 class="text-center  card-text">Photographer</h6>
@@ -1194,7 +1238,7 @@
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
                 <!-- <a ><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a> -->
-                <a ><img src="https://img.icons8.com/fluency/40/000000/link.png" /></a>
+                <a><img src="https://img.icons8.com/fluency/40/000000/link.png" /></a>
               </div>
             </div>
           </div>
@@ -1202,15 +1246,17 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/Ashutosh.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Ashutosh.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Ashutosh Srivastava</h4>
               <h6 class="text-center  card-text">Associate Social Media Lead</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/ashutosh-srivastava-892433226/"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://www.instagram.com/ashutoshsrivastava123/"><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
+                <a href="https://www.linkedin.com/in/ashutosh-srivastava-892433226/"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.instagram.com/ashutoshsrivastava123/"><img
+                    src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -1218,20 +1264,20 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Lokeshwara.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Lokeshwara.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">V Lokeswara Reddy </h4>
               <h6 class="text-center  card-text">Associate Social Media Lead</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                
-                <a ><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
+
+                <a><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
         </div>
-        
+
 
       </div>
     </div>
@@ -1242,7 +1288,7 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Yasashwini.jpeg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Yasashwini.jpeg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Yasaswini Reddy M</h4>
               <h6 class="text-center  card-text">Documentation Head</h6>
@@ -1258,15 +1304,17 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(127, 127, 255), rgb(198, 40, 255));border-radius: 10px;">
-            <img src="./2022-23/Aanchal.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Aanchal.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Aanchal Niigam</h4>
               <h6 class="text-center  card-text">Content Writer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/aanchal-nigam-742446249"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://instagram.com/swisscheese092003?igshid=YmMyMTA2M2Y="><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
+                <a href="https://www.linkedin.com/in/aanchal-nigam-742446249"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://instagram.com/swisscheese092003?igshid=YmMyMTA2M2Y="><img
+                    src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -1274,31 +1322,35 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Licia.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Licia.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Licia Saikia </h4>
               <h6 class="text-center  card-text">Content Writer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="www.linkedin.com/in/liciasaikia"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://www.instagram.com/liciasaikia/"><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
+                <a href="www.linkedin.com/in/liciasaikia"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.instagram.com/liciasaikia/"><img
+                    src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-6 col-md-3 p-2">
+        <div class="col-sm-6 col-6 col-md-3 card-imgp-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2022-23/Debandhi.jpg" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2022-23/Debandhi.jpg" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Debanshi Deb </h4>
               <h6 class="text-center  card-text">Associate Content Writer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                <a href="https://www.linkedin.com/in/debanshi-deb-9450a7253"><img src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
-                <a href="https://www.instagram.com/duh_banshi"><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
+                <a href="https://www.linkedin.com/in/debanshi-deb-9450a7253"><img
+                    src="https://img.icons8.com/color/40/000000/linkedin-circled--v1.png" /></a>
+                <a href="https://www.instagram.com/duh_banshi"><img
+                    src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
@@ -1306,20 +1358,20 @@
         <div class="col-sm-6 col-6 col-md-3 p-2">
           <div class="card member_card mx-auto" data-aos="flip-left" data-aos-duration="1000"
             style="background-image: linear-gradient(to right, rgb(169, 169, 254), rgb(211, 88, 255));border-radius: 10px;">
-            <img src="./2021-22/member-blank.png" alt="" class="card-img p-4 mx-auto" style=" border-radius: 50%;">
+            <img src="./2021-22/member-blank.png" alt="" class="card-img p-4 mx-auto">
             <div class="card-body">
               <h4 class="card-title  text-center ">Dayita Halder </h4>
               <h6 class="text-center  card-text">Associate Content Writer</h6>
             </div>
             <div class="card-footer  d-flex justify-content-center">
               <div class="member_links">
-                
-                <a ><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png"/></a>
+
+                <a><img src="https://img.icons8.com/fluency/40/000000/instagram-new.png" /></a>
               </div>
             </div>
           </div>
         </div>
-        
+
 
       </div>
     </div>
