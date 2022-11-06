@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        <link rel="icon" href="./logo-max-size0636.png">
+    <link rel="icon" href="./logo-max-size0636.png">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
     <style>
@@ -164,7 +164,7 @@
         .btn-success {
             box-shadow: 4px 4px rgb(0, 47, 0);
         }
-        
+
         hr.new5 {
             border: 10px solid #0000FF;
             border-radius: 5px;
@@ -350,6 +350,11 @@
         p {
             color: #ffffff;
         }
+
+        .p-resp {
+            padding-left: 10% !important;
+            padding-right: 10% !important;
+        }
     </style>
 
 </head>
@@ -358,8 +363,8 @@
     <div class="upnav">
         <nav role="navigation" class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black;">
             <div data-aos="zoom-in-left" data-aos-duration="800" class="container-fluid ">
-                <a class="navbar-brand " href="./index.html"> <img
-                        src="WiOS_White_NoBG.png" class="mb-1 logo_img" height="30px" width="30px" alt="">&nbsp;WiOS</a>
+                <a class="navbar-brand " href="./index.html"> <img src="WiOS_White_NoBG.png" class="mb-1 logo_img"
+                        height="30px" width="30px" alt="">&nbsp;WiOS</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -370,8 +375,7 @@
                     <ul data-aos="zoom-in-left" data-aos-duration="800" class="navbar-nav ms-auto mb-2 mb-lg-0">
 
                         <li class="nav_item_mx-2">
-                            <a class="nav-link" aria-current="page"
-                                href="./index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav_item_mx-2">
                             <a class="nav-link" href="#about">About</a>
@@ -384,8 +388,7 @@
                             <a class="nav-link" href="./LTS/index.html">LTS</a>
                         </li>
                         <li class="nav_item_mx-2">
-                            <a class="nav-link"
-                                href="./index.html#community">Community</a>
+                            <a class="nav-link" href="./index.html#community">Community</a>
 
                         </li>
 
@@ -395,11 +398,11 @@
                                 Members
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="nav_item_mx-2"><a class="dropdown-item"
-                                        href="./members_2022.html">2022 &nbsp; →</a>
+                                <li class="nav_item_mx-2"><a class="dropdown-item" href="./members_2022.html">2022
+                                        &nbsp; →</a>
                                 </li>
-                                <li class="nav_item_mx-2"><a class="dropdown-item"
-                                        href="./members_2021.html">2021 &nbsp; →</a>
+                                <li class="nav_item_mx-2"><a class="dropdown-item" href="./members_2021.html">2021
+                                        &nbsp; →</a>
                                 </li>
                             </ul>
                         </li>
@@ -408,8 +411,9 @@
             </div>
         </nav>
     </div>
-    <div class="mt-5 lower" id="lower_div">
-        <div class="container-fluid bgg p-5 d-flex flex-column ">
+
+    <div class="mt-5 lower">
+        <div class="container-fluid bgg p-5 d-flex flex-column p-resp">
             <div data-aos="flip-left" data-aos-duration="800" class="imm d-block mx-auto">
                 <img src="./WiOS_White_NoBG.png" class="" height="200px" width="200px" alt="">
             </div>
@@ -427,30 +431,32 @@
                         say Hi</button></a>
             </div>
         </div>
-        <div class="container p-5 ">
-            <div>
-                <img data-aos="fade-right" data-aos-duration="800" src="./logo-max-size.png" id="dark_image"
-                    class="cent_img navbar-brand float-end rounded-circle" height="200px" width="200px" alt="">
-            </div>
-            <div data-aos="fade-right" data-aos-duration="800" class="para2 ">
-                <p class="p-3">
-                    <strong>
-                        <h1> Diversity in tech</h1>
-                    </strong>
-                </p>
-                <p data-aos-duration="600">
-                    Women in Open Source(WiOS) is committed to bringing diversity in technology. <br> We conduct
-                    hands-on workshops, organize hackathons, and seminars, and provide out members you get to learn and
-                    grow.
-                </p>
-            </div>
-            <a name="about"></a>
+
+    </div>
+
+    <div class="container-fluid p-5 p-resp">
+        <div>
+            <img data-aos="fade-right" data-aos-duration="800" src="./logo-max-size.png" id="dark_image"
+                class="cent_img navbar-brand float-end rounded-circle" height="200px" width="200px" alt="">
         </div>
+        <div data-aos="fade-right" data-aos-duration="800" class="para2 ">
+            <p class="p-3">
+                <strong>
+                    <h1> Diversity in tech</h1>
+                </strong>
+            </p>
+            <p data-aos-duration="600">
+                Women in Open Source(WiOS) is committed to bringing diversity in technology. <br> We conduct
+                hands-on workshops, organize hackathons, and seminars, and provide out members you get to learn and
+                grow.
+            </p>
+        </div>
+        <a name="about"></a>
     </div>
 
 
     <!--about-->
-    <div data-aos="zoom-in" class="container-fluid bg-dark text-light p-4">
+    <div data-aos="zoom-in" class="container-fluid bg-dark text-light p-4 p-resp">
         <div data-aos="fade-right" data-aos-duration="800" class="para2 ">
             <h1 class="text-light" style="opacity: 0.9">About the University</h1>
             <img class="about-university-image rounded" data-aos="fade-left" data-aos-duration="800" src="./vitap1.jpg"
@@ -475,16 +481,25 @@
 
             </div>
         </div>
-        <hr>
-        <div class="container-fluid ">
-            <video style=" width:100%; 
-            height:min-content" controls>
-                <source src="intro.mp4" type="video/mp4">
-            </video>
+    </div>
 
-        </div>
-        <hr>
-        <div data-aos="fade-right" data-aos-duration="800" class="para2 ">
+    <div class="bg-dark text-light p-3">
+        <hr class="m-0">
+    </div>
+    <div class="container-fluid bg-dark text-light">
+        <video style=" width:100%; 
+            height:min-content" controls>
+            <source src="intro.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <div class="bg-dark text-light p-3">
+        <hr class="m-0">
+    </div>
+
+    <div class="container-fluid bg-dark text-light">
+        <div data-aos="fade-right" data-aos-duration="800" class="para2 p-resp py-5">
             <h1 class="text-light" style="opacity: 0.9;">About Our Club</h1>
             <img class="about-club-image" data-aos="fade-right" data-aos-duration="800" src="wios_logo.png"
                 id="dark_image" class="cent_img navbar-brand float-end rounded-circle" height="300px" width="300px"
@@ -514,6 +529,7 @@
             </div>
         </div>
     </div>
+
 
 
     <div class="container-fluid posts_home py-4">
