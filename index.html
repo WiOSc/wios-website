@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        <link rel="icon" href="./logo-max-size0636.png">
+    <link rel="icon" href="./WiOS logo circle.png">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
     <style>
@@ -73,8 +73,13 @@
             }
 
             .cent_img {
-                width: 50px;
-                height: 60px;
+                width: 70px !important;
+                height: 80px !important;
+            }
+
+            .about-club-image {
+                width: 120px !important;
+                height: 130px !important
             }
 
             .svg_icon {
@@ -352,16 +357,58 @@
         p {
             color: #ffffff;
         }
+
+        /**LOADING ANIMATION**/
+        .loader-container {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            background: #000 url("https://media.giphy.com/media/8agqybiK5LW8qrG3vJ/giphy.gif") center no-repeat;
+            z-index: 1;
+        }
+
+        .spinner {
+            width: 64px;
+            height: 64px;
+            border: 8px solid;
+            border-color: #3d5af1 transparent #3d5af1 transparent;
+            border-radius: 50%;
+            animation: spin-anim 1.2s linear infinite;
+        }
+
+        @keyframes spin-anim {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loader-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            background: #000;
+            z-index: 1;
+        }
     </style>
 
 </head>
 
 <body>
+    <div class="loader-container">
+        <div class="spinner"></div>
+      </div>
     <div class="upnav">
         <nav role="navigation" class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black;">
             <div data-aos="zoom-in-left" data-aos-duration="800" class="container-fluid ">
-                <a class="navbar-brand " href="./index.html"> <img
-                        src="WiOS_White_NoBG.png" class="mb-1 logo_img" height="30px" width="30px" alt="">&nbsp;WiOS</a>
+                <a class="navbar-brand " href="./index.html"> <img src="WiOS_White_NoBG.png" class="mb-1 logo_img"
+                        height="30px" width="30px" alt="">&nbsp;WiOS</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -372,8 +419,7 @@
                     <ul data-aos="zoom-in-left" data-aos-duration="800" class="navbar-nav ms-auto mb-2 mb-lg-0">
 
                         <li class="nav_item_mx-2">
-                            <a class="nav-link" aria-current="page"
-                                href="./index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav_item_mx-2">
                             <a class="nav-link" href="#about">About</a>
@@ -386,8 +432,7 @@
                             <a class="nav-link" href="./LTS/index.html">LTS</a>
                         </li>
                         <li class="nav_item_mx-2">
-                            <a class="nav-link"
-                                href="./index.html#community">Community</a>
+                            <a class="nav-link" href="./index.html#community">Community</a>
 
                         </li>
 
@@ -397,11 +442,11 @@
                                 Members
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="nav_item_mx-2"><a class="dropdown-item"
-                                        href="./members_2022.html">2022 &nbsp; →</a>
+                                <li class="nav_item_mx-2"><a class="dropdown-item" href="./members_2022.html">2022
+                                        &nbsp; →</a>
                                 </li>
-                                <li class="nav_item_mx-2"><a class="dropdown-item"
-                                        href="./members_2021.html">2021 &nbsp; →</a>
+                                <li class="nav_item_mx-2"><a class="dropdown-item" href="./members_2021.html">2021
+                                        &nbsp; →</a>
                                 </li>
                             </ul>
                         </li>
@@ -430,22 +475,26 @@
             </div>
         </div>
         <div class="container p-5 ">
-            <div>
-                <img data-aos="fade-right" data-aos-duration="800" src="./logo-max-size.png" id="dark_image"
-                    class="cent_img navbar-brand float-end rounded-circle" height="200px" width="200px" alt="">
-            </div>
+
+            <img data-aos="fade-right" data-aos-duration="800" src="./logo-max-size.png" id="dark_image"
+                class="cent_img navbar-brand float-end rounded-circle" height="200px" width="200px" alt="">
+
             <div data-aos="fade-right" data-aos-duration="800" class="para2 ">
-                <p class="p-3">
+                <p class="">
                     <strong>
                         <h1> Diversity in tech</h1>
                     </strong>
-                </p>
-                <p data-aos-duration="600">
-                    Women in Open Source(WiOS) is committed to bringing diversity in technology. <br> We conduct
-                    hands-on workshops, organize hackathons, and seminars, and provide out members you get to learn and
+
+                <p data-aos-duration="600" class="p-2">
+                    Women in Open Source(WiOS) is committed to bringing diversity in technology. We conduct
+                    hands-on workshops, organize hackathons, and seminars, and provide out members you get to learn
+                    and
                     grow.
                 </p>
+                </p>
+
             </div>
+
             <a name="about"></a>
         </div>
     </div>
@@ -464,7 +513,7 @@
                     extracurricular activities.It is one of the most prestigious institutions with a large student
                     population, which is always accompanied
                     by healthy academic competition among students.<br>This competition fosters an environment in which
-                    students strive to excel in all areas.
+                    students strive to excel in all areas.</p>
                 <p>Vellore Institute of Technology is a research-driven, student-centered and community focused
                     university run by and for the people.Innovation is the key to success and VIT-AP is the key to
                     success because of its mission to make
@@ -474,13 +523,12 @@
                             style="font-size:18px;" href="https://vitap.ac.in/" target="_blank">Learn More</button></a>
 
                 </div>
-
+                </p>
             </div>
         </div>
         <hr>
         <div class="container-fluid ">
-            <video style=" width:100%; 
-            height:min-content" controls>
+            <video style=" width:100%; height:min-content" controls>
                 <source src="intro.mp4" type="video/mp4">
             </video>
 
@@ -488,9 +536,8 @@
         <hr>
         <div data-aos="fade-right" data-aos-duration="800" class="para2 ">
             <h1 class="text-light" style="opacity: 0.9;">About Our Club</h1>
-            <img class="about-club-image" data-aos="fade-right" data-aos-duration="800" src="wios_logo.png"
-                id="dark_image" class="cent_img navbar-brand float-end rounded-circle" height="300px" width="300px"
-                alt="">
+            <img data-aos="fade-right" data-aos-duration="800" src="wios_logo.png" id="dark_image"
+                class="about-club-image navbar-brand float-end rounded-circle" height="300px" width="300px" alt="">
             <div data-aos="fade-right" data-aos-duration="800" class="para2 ">
 
                 <p data-aos-duration="600" class="p-3">
@@ -513,6 +560,7 @@
                     analytics, how machine learning works, and how to build own AI. Our community works towards creating
                     a diverse technology ecosystem
                     and also thrives to contribute towards the problems that are challenging the world.</p>
+                </p>
             </div>
         </div>
     </div>
@@ -523,14 +571,14 @@
             <div class="col text-center px-1">
                 <div class="col text-center px-1">
                     <h1 class="text-light" style="opacity: 0.9;">Latest Event</h1>
-                    <div data-aos="flip-up" id="change_card" class="card  mx-auto m-3 border p-4"
+                    <div data-aos="flip-up" id="change_card" class="card  mx-auto mb-3 border p-4"
                         style="width: 350px; border-radius: 10px;">
                         <img id="dark_image2" src="./logo-max-size.png" class="mx-auto" alt="" height="150px"
                             width="150px">
                         <div class="card-body">
-                            <strong>
-                                <p class="card-title" style="font-size: 20px;">Introduction to open source</p>
-                            </strong>
+
+                            <h4 class="card-title">Introduction to open source</h4>
+
                             <p class="card-text" style="color: black;">Open source is the latest trend in software
                                 development but what is
                                 open source? Read on to find out!</p>
@@ -543,8 +591,8 @@
                 </div>
                 <a name="community"></a>
             </div>
-        </div> <br>
-        <hr>
+        </div>
+
 
     </div>
 
@@ -555,33 +603,33 @@
       </div>
     </div>
   </div> -->
-    <div data-aos="zoom-in" class="container-fluid bg-dark text-light p-4 mb-5 my-2">
+    <div data-aos="zoom-in" class="container-fluid bg-dark text-light p-5">
 
         <div data-aos="fade-right">
             <h1 class="text-center"> Join our Community</h1>
         </div>
         <div class="d-flex flex-row justify-content-center">
-            <div data-aos="flip-left" class="mx-2" data-aos-duration="1300">
+            <div data-aos="flip-left" class="mx-3" data-aos-duration="1300">
                 <a href="https://github.com/WiOSc/website"><img class="svg_icon"
                         src="https://img.icons8.com/nolan/64/github.png" /></a>
             </div>
-            <div data-aos="flip-left" class="mx-2" data-aos-duration="1300">
+            <div data-aos="flip-left" class="mx-3" data-aos-duration="1300">
                 <a href="https://www.instagram.com/wios_vitap/"><img class="svg_icon"
                         src="https://img.icons8.com/nolan/64/instagram-new.png" /></a>
             </div>
-            <div data-aos="flip-left" class="mx-2" data-aos-duration="1300">
+            <div data-aos="flip-left" class="mx-3" data-aos-duration="1300">
                 <a href="https://www.linkedin.com/company/women-in-open-source-vit-ap/"><img class="svg_icon"
                         src="https://img.icons8.com/nolan/64/linkedin.png" /></a>
             </div>
-            <div data-aos="flip-left" class="mx-2" data-aos-duration="1300">
+            <div data-aos="flip-left" class="mx-3" data-aos-duration="1300">
                 <a href="https://www.youtube.com/channel/UCc7KEMTSZaCVq-vKF9vkwQw"><img class="svg_icon"
                         src="https://img.icons8.com/nolan/64/youtube-play.png" /></a>
             </div>
-            <div data-aos="flip-left" class="mx-2" data-aos-duration="1300">
+            <div data-aos="flip-left" class="mx-3" data-aos-duration="1300">
                 <a href="https://discord.gg/SwAV84Pz7X"><img class="svg_icon"
                         src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/discord-logo.png" /></a>
             </div>
-            <div data-aos="flip-left" class="mx-2" data-aos-duration="1300">
+            <div data-aos="flip-left" class="mx-3" data-aos-duration="1300">
                 <a href="mailto:wios@vitap.ac.in"><img class="svg_icon"
                         src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/open-envelope.png" /></a>
             </div>
@@ -610,29 +658,15 @@
         <strong>
             <div class="container py-5 " data-aos="flip-left" data-aos-duration="900">
                 <div class="row ">
-                    <div class="mx-auto col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="zoom-in" data-aos-duration="1000"><img
-                            src="./logo-max-size.png" alt="" width="180" class="mb-3 ">
-                        <p class="font-italic text-muted">Write to us at <a
+                    <div class="mx-auto d-flex flex-column col-lg-6 col-md-6 mb-4 mb-lg-0" data-aos="zoom-in"
+                        data-aos-duration="1000">
+                        <div class="mx-auto"><img class="text-center mb-3" src="./logo-max-size.png" alt="" width="180">
+                        </div>
+                        <p class="font-italic text-center text-muted">Write to us at <a
                                 href="mailto:wios@vitap.ac.in">wios@vitap.ac.in</a> OR Join us on <a
                                 href="https://discord.gg/SwAV84Pz7X">discord</a> server
                         </p>
-                        <p class="font-italic text-muted">Connect us using social media</p>
-                        <ul class="list-inline mt-4">
-                            <li class="list-inline-item" data-aos="zoom-in-right" data-aos-duration="1500"><a
-                                    href="https://github.com/WiOSc"><img class="svg_icon"
-                                        src="https://img.icons8.com/nolan/64/github.png" /></a></li>
-                            <li class="list-inline-item" data-aos="zoom-in-right" data-aos-duration="1500"><a
-                                    href="https://www.linkedin.com/company/women-in-open-source-vit-ap"><img
-                                        class="svg_icon" src="https://img.icons8.com/nolan/64/linkedin.png" /></a></li>
-                            <li class="list-inline-item" data-aos="zoom-in-right" data-aos-duration="1500"><a
-                                    href="https://www.youtube.com/channel/UCc7KEMTSZaCVq-vKF9vkwQw"><img
-                                        class="svg_icon" src="https://img.icons8.com/nolan/64/youtube-play.png" /></a>
-                            </li>
-                            <li class="list-inline-item" data-aos="zoom-in-right" data-aos-duration="1500"><a
-                                    href="https://www.instagram.com/wios_vitap/"><img class="svg_icon"
-                                        src="https://img.icons8.com/nolan/64/instagram-new.png" /></a>
-                            </li>
-                        </ul>
+
                     </div>
                 </div>
         </strong>
@@ -706,5 +740,10 @@
     }
     console.log("Developed by Vijay, Praneeth,Rahul,Kamal,Akhilesh")
 </script>
-
+<script>
+    const loaderContainer = document.querySelector('.loader-container');
+    window.addEventListener('load', () => {
+      loaderContainer.style.display = 'none';
+  });
+  </script>
 </html>
