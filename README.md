@@ -1,2 +1,2 @@
-Me and my team members have desigmed our Club (Women in Opem Source) Website.
-Have a look at it.
+My team and I have designed the website for our club, 'Women in Open Source'.
+Take a look!
