@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <script>document.getElementsByTagName("html")[0].className += " js";</script> -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Events</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <link rel="icon" href="../logo-max-size0636.png">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      user-select: none;
+      background-image: linear-gradient(100deg, rgb(26, 26, 26), rgb(76, 76, 76));
+      /* background-image: linear-gradient(100deg,rgb(80, 84, 118),rgba(17, 73, 170, 0.64)); */
+    }
+
+    .para2 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 19px;
+    }
+
+    @media (max-width: 800px) {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .logo_img {
+        width: 20px;
+        height: 20px;
+      }
+
+      body {
+        font-size: 15px !important;
+      }
+      .svg_icon{
+        width: 50px !important;
+        height: 50px !important;
+      }
+
+    }
+
+    @media (max-width: 400px) {
+      .card {
+        width: 210px !important;
+        font-size: 15px !important;
+      }
+      .card-text{
+        font-size: 15px;
+      }
+      .cent_img {
+        width: 50px;
+        height: 60px;
+      }
+      .svg_icon{
+        
+        width: 40px !important;
+        height:40px !important;
+      }
+    }
+
+    .card {
+      opacity: 0.9;
+    }
+
+    .card:hover {
+      box-shadow: 5px 5px 10px black;
+      transition: 0.2s ease-in-out;
+      opacity: 1;
+    }
+
+    .bgg {
+      background-image: url("./secondary-hero.jpg");
+      /* background-image: linear-gradient(30deg, blue, rgb(255, 84, 255), rgb(251, 161, 176)); */
+      background-size: 120% 120%;
+      animation: gradient2 5s ease-in-out infinite;
+    }
+
+
+    .upnav {
+
+      background-color: rgb(0, 0, 0);
+      /* color: black; */
+
+    }
+
+
+    .posts_home {
+      /* background-image: linear-gradient(217deg, rgba(242, 0, 255, 0.878), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(7, 135, 233, 0.8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 180, 141, .8), rgba(0, 0, 255, 0) 70.71%); */
+      background-image: url("./aws-summit-2022.jpg");
+
+      background-size: 300% 200%;
+      animation: gradient 10s ease infinite;
+      /* background-image: linear-gradient(100deg, rgb(245, 129, 251), rgb(7, 233, 214), rgb(0, 180, 141)); */
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 50% 70%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @keyframes gradient2 {
+      0% {
+        background-position: 0% 30%;
+      }
+
+      50% {
+        background-position: 50% 90%;
+      }
+
+      100% {
+        background-position: 0% 30%;
+      }
+    }
+
+    .navbar {
+      font-size: 18px;
+    }
+
+    .btn-primary {
+      box-shadow: 4px 4px rgb(0, 0, 136);
+    }
+
+    .btn-success {
+      box-shadow: 4px 4px rgb(0, 47, 0);
+    }
+
+    .footer {}
+
+    .nav_item_mx-2 a {
+  position: relative;
+}
+ 
+.nav_item_mx-2 a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+.nav_item_mx-2 a:hover::before {
+  transform: scaleX(1);
+}
+
+.menu[data-animation="center"] a::before {
+  transform-origin: center;
+}
+
+.dropdown-menu{
+  border-radius: 10px;
+   display: none;
+   position: absolute;
+   background-color: #000000;
+   min-width: 75px;
+   box-shadow: 5px 5px 45px ;
+   z-index: 1;
+}
+.dropdown:hover .dropdown-menu {
+	
+    display: block;
+    margin-top: 1px 20px;
+	padding: 10px 25px;  
+	
+}
+.dropdown-menu {
+  border-radius: 10px;
+   display: none;
+   position: absolute;
+   background-color: #000000;
+   min-width: 75px;
+   box-shadow: 9px 9px 80px 10px rgba(255, 255, 255, 0.2);
+   z-index: 1;
+}
+.dropdown-menu a {
+   float: none;
+   color: rgb(255, 255, 255);
+   padding: 10px 10px;
+   text-decoration: none;
+   display: block;
+   text-align: center;
+}
+.dropdown-menu > li > a:hover {
+    background-image: none;
+    background-color:#000000;
+	color: #ffffff;
+}
+.cd-timeline__img img{
+  width: 40px;
+  height: 35px;
+}
+.cd-timeline__content{
+  background-color:rgb(26, 25, 25);
+}
+.cd-timeline__content.text-component::before{
+/* triangle color*/
+}
+.cd-timeline__img--picture,.cd-timeline__img--movie,.cd-timeline__img--location {
+  background-color:#ffffff;
+}
+.button {
+  background-color: #2a2a2a; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 30px;
+  cursor: pointer;
+  width: 150px;
+  height:60px;
+  
+  
+
+
+}
+.button4 {border-radius: 12px;}
+/**LOADING ANIMATION**/
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: #000
+        url("https://media.giphy.com/media/8agqybiK5LW8qrG3vJ/giphy.gif") center
+        no-repeat;
+    z-index: 1;
+    }
+    .spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: #3d5af1 transparent #3d5af1 transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: #000;
+    z-index: 1;
+}
+  </style>
+  
+  
+</head>
+<body>
+  <div class="loader-container">
+    <div class="spinner"></div>
+  </div>
+	<!-- <header class="cd-main-header text-center flex flex-column flex-center">
+    <h1>Responsive Vertical Timeline</h1>
+    <p class="margin-top-sm">👈<a class="color-inherit" href="https://codyhouse.co/gem/vertical-timeline/">Article &amp; Download</a></p>
+  </header> -->
+  <div class="upnav">
+    <nav role="navigation" class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black;">
+        <div data-aos="zoom-in-left" data-aos-duration="800" class="container-fluid ">
+            <a class="navbar-brand " href="../index.html"> <img
+                    src="../WiOS_White_NoBG.png" class="mb-1 logo_img" height="30px" width="30px" alt="">&nbsp;WiOS</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul data-aos="zoom-in-left" data-aos-duration="800" class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav_item_mx-2">
+                        <a class="nav-link" aria-current="page"
+                            href="../index.html">Home</a>
+                    </li>
+                    <li class="nav_item_mx-2">
+                        <a class="nav-link" href="../index.html#about">About</a>
+                    </li>
+                    
+                    <li class="nav_item_mx-2">
+                        <a class="nav-link" href="../dist\index.html">Events</a>
+                    </li>
+                    <li class="nav_item_mx-2">
+                        <a class="nav-link" href="../LTS/index.html">LTS</a>
+                    </li>
+                    <li class="nav_item_mx-2">
+                        <a class="nav-link"
+                            href="../index.html#community">Community</a>
+
+                    </li>
+
+
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle">
+                            Members
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li class="nav_item_mx-2"><a class="dropdown-item"
+                            href="../members_2023.html">2023 &nbsp; →</a>
+                          </li>
+                          <li class="nav_item_mx-2"><a class="dropdown-item"
+                                  href="../members_2022.html">2022 &nbsp; →</a>
+                          </li>
+                          <li class="nav_item_mx-2"><a class="dropdown-item"
+                                  href="../members_2021.html">2021 &nbsp; →</a>
+                          </li>
+                      </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+  <section class="cd-timeline js-cd-timeline" style="background-color:#212121;">
+    <center><h1 style="color:#ffffff;"><br>
+      Events</h1></center>
+    <div class="container max-width-lg cd-timeline__container">
+	    	    <div class="cd-timeline__block">
+        
+            <div class="cd-timeline__img cd-timeline__img--picture">
+              <img src="trophy.svg" alt="Picture">
+            </div> <!-- cd-timeline__img -->
+            <div class="cd-timeline__content text-component">
+               <h2 style="color:#ffffff;">THE GRAPHICAL GALA</h2>
+              <p class="color-contrast-medium">Unleash your creativity through computers...</p>
+              
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">Nov 20 2023</span>
+                <img src="./graphical gala/401701747_1038059254102577_6473412339739191288_n.jpeg" alt="pic" width="400px">  
+                 
+              </div>
+              
+              <center>
+                <br>
+              </center>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+        <div class="cd-timeline__block">
+        
+            <div class="cd-timeline__img cd-timeline__img--picture">
+              <img src="trophy.svg" alt="Picture">
+            </div> <!-- cd-timeline__img -->
+            <div class="cd-timeline__content text-component">
+               <h2 style="color:#ffffff;">OPEN TECH SUMMIT WITH M.D. MOINUDDIN</h2>
+              <p class="color-contrast-medium">Join us for the OpenTech Summit Techcast with Mr. Moinuddin Mohammed, an expert in open source and its upscaling. Discover the power of open technology and its impact on the future. 🌐🔓</p>
+              
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">May 27 2023</span>
+                <img src="./open tech summit/348729206_485667760383388_8532706231079027993_n.jpeg" alt="pic" width="400px">  
+                 
+              </div>
+              
+              <center>
+                <br>
+              </center>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+        <div class="cd-timeline__block">
+        
+            <div class="cd-timeline__img cd-timeline__img--picture">
+              <img src="trophy.svg" alt="Picture">
+            </div> <!-- cd-timeline__img -->
+            <div class="cd-timeline__content text-component">
+               <h2 style="color:#ffffff;">LA CASA DEL PROFESSOR</h2>
+              <p class="color-contrast-medium">The wait is over. Get ready to pull off the ultimate hack at La Casa Del Profesor, brought to you by WiOS! Are you ready to take on the role of the Professor and execute the perfect plan to unlock the secrets of technology?</p>
+              
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">Apr 15 2023</span>
+                <img src="./la casa del professor/330211237_180369898173675_7027508320361378200_n.jpg" alt="pic" width="400px">  
+                 
+              </div>
+              
+              <center>
+                <br>
+              </center>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+        <div class="cd-timeline__block">
+        
+            <div class="cd-timeline__img cd-timeline__img--picture">
+              <img src="trophy.svg" alt="Picture">
+            </div> <!-- cd-timeline__img -->
+            <div class="cd-timeline__content text-component">
+               <h2 style="color:#ffffff;">SPEAKER SESSION WITH ISHAN SHARMA</h2>
+              <p class="color-contrast-medium">An Exciting session in upcoming VTAPP 2022 with Ishan Sharma
+                🤩</p>
+              
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">Dec 11 2022</span>
+                <img src="./ishan sharma/318672887_1174542679841407_3266310253414566189_n.jpeg" alt="pic" width="400px">  
+                 
+              </div>
+              
+              <center>
+                <br>
+              </center>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+        <div class="cd-timeline__block">
+        
+            <div class="cd-timeline__img cd-timeline__img--picture">
+              <img src="trophy.svg" alt="Picture">
+            </div> <!-- cd-timeline__img -->
+            <div class="cd-timeline__content text-component">
+               <h2 style="color:#ffffff;">SQUID GAMES</h2>
+              <p class="color-contrast-medium">Can you decode the clues ?!! 😎
+                Follow the clues and chase the bounty !!!!🌟
+                An Exciting event in upcoming VTAPP 2022🔥</p>
+              
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">Dec 10 2022</span>
+                <img src="./squid games/318598498_476010387955086_1689549459571434571_n.jpeg" alt="pic" width="400px">  
+                 
+              </div>
+              
+              <center>
+                <br>
+              </center>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+        <div class="cd-timeline__block">
+        
+            <div class="cd-timeline__img cd-timeline__img--picture">
+              <img src="trophy.svg" alt="Picture">
+            </div> <!-- cd-timeline__img -->
+            <div class="cd-timeline__content text-component">
+               <h2 style="color:#ffffff;">CHUNIN SHIKEN</h2>
+              <p class="color-contrast-medium">An interactive event with ACM and null chapter of VIT-AP</p>
+              
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">Nov 26 2022</span>
+                <img src="./chunin shiken/316874706_659118055908424_6885736225251897345_n.jpeg" alt="pic" width="400px">  
+                 
+              </div>
+              
+              <center>
+                <br>
+              </center>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+        <div class="cd-timeline__block">
+            <div class="cd-timeline__img cd-timeline__img--picture">
+              <img src="trophy.svg" alt="Picture">
+            </div> <!-- cd-timeline__img -->
+            <div class="cd-timeline__content text-component">
+               <h2 style="color:#ffffff;">ESCAPE ROOM</h2>
+              <p class="color-contrast-medium">The woods may be lovely... But dark and deep
+                And you.. Have commitments to keep.. </p>
+              
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">Nov 12 2022</span>
+                <img src="./escaperoom/banner.jpg" alt="pic" width="400px">  
+                 
+              </div>
+              
+              <center>
+                <br>
+              </center>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+                <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="trophy.svg" alt="Picture">
+        </div>
+        <div class="cd-timeline__content text-component">
+          <h2 style="color:#ffffff;">FOSS & GIT</h2>
+          <p class="color-contrast-medium">We've come up with an intriguing workshop this year! We're excited, are you?? </p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">Sep 10 2022</span>
+            <img src="./Foss/foss.png" alt="pic" width="400px">  
+            
+          </div>
+          <center>
+            <br>
+            <form action="./Foss/index.html">
+              <input type="submit" class="button button4" value="Read More">
+            </form>
+          </center>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+            <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--movie">
+          <img src="trophy.svg" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+        <div class="cd-timeline__content text-component">
+           <h2 style="color:#ffffff;">DEMYSTIFYING AI|ML</h2>
+          <p class="color-contrast-medium">Get yourself familarized with AI|ML real life applications, How to delve into a carrer in the field of AI|ML</p>
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">Feb 13 2022</span>
+            <img src="./ai/AI.jpeg" alt="pic" width="400px">  
+          </div>
+          <center>
+            <br>
+            <form action="./ai/index.html">
+              <input type="submit" class="button button4" value="Read More">
+            </form>
+          </center>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+            <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="trophy.svg" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+           <h2 style="color:#ffffff;">REACTX EP.2</h2>
+          <p class="color-contrast-medium">ReactX - Build an Job Portal with React and NodeJS, Ep. 2
+            In this workshop we’ll be building a simple Job Portal with ReactJs and NodeJS</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">Dec 19 2021</span>
+            <img src="./react_2/banner.png" alt="pic" width="400px">  
+            
+          </div>
+          
+          <center>
+            <br>
+            <form action="./react_2/index.html">
+              <input type="submit" class="button button4" value="Read More">
+            </form>
+          </center>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+            <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="trophy.svg" alt="Location">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+           <h2 style="color:#ffffff;">REACTX EP.1</h2>
+          <p class="color-contrast-medium">ReactX - Build an escape room game with React
+            In this workshop we’ll be building a simple escape room game with ReactJs.</p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">Nov 14 2021</span>
+            <img src="./react_1/Reactx.jpeg" alt="pic" width="400px">
+            
+          </div>
+          
+          <center>
+            <br>
+            <form action="./react_1/index.html">
+              <input type="submit" class="button button4" value="Read More">
+            </form>
+          </center>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+            <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="trophy.svg" alt="Location">
+        </div> <!-- cd-timeline__img -->
+        <div class="cd-timeline__content text-component">
+           <h2 style="color:#ffffff;">HACKTOBERFEST</h2>
+          <p class="color-contrast-medium">Talk on Data Analytics and Machine Learning, a fun quiz and a Q&A session with the speaker.</p>
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">Oct 3 2021</span>
+            <img src="./hacktober/hackotber fest.jpeg" alt="pic" width="400px">  
+          </div>
+          <center>
+            <br>
+            <form action="./hacktober/index.html">
+              <input type="submit" class="button button4" value="Read More">
+            </form>
+          </center>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--movie">
+          <img src="trophy.svg" alt="Movie">
+        </div> <!-- cd-timeline__img -->
+        <div class="cd-timeline__content text-component">
+           <h2 style="color:#ffffff;">WISTIA</h2>
+          <p class="color-contrast-medium">UI/UX Hands on Workshop
+            Ice breaker session, games and UI/UX Hands on session</p>
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">Aug 22 2021</span>
+            <img src="./wistia/event_poster2.png" alt="pic" width="400px"> 
+          </div>
+          <center>
+            <br>
+            <form action="./wistia/index.html">
+              <input type="submit" class="button button4" value="Read More">
+            </form>
+          </center>
+        </div>
+      </div>
+  </Section>
+  <script src="assets/js/main.js"></script>
+</body>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  console.log("chenc-1")
+  // document.body.setAttribute("style","backgroundColor:linear-gradient(100deg,rgb(80, 84, 118),rgba(17, 73, 170, 0.64)) ");
+  // console.log(document.body.style.backgroundColor="linear-gradient(100deg,rgb(106, 117, 234),rgb(196, 196, 196));")
+  // document.body.style.backgroundColor="linear-gradient(100deg,rgb(106, 117, 234),rgb(196, 196, 196)); !important"
+  var counter = 1;
+  function theme() {
+
+    if (counter == 1) {
+      console.log("pressed")
+      // document.body.setAttribute("style","backgroundColor:linear-gradient(100deg,rgb(80, 84, 118),rgba(17, 73, 170, 0.64)) !important");
+      document.body.style.backgroundColor = "linear-gradient(100deg,rgb(80, 84, 118),rgba(17, 73, 170, 0.64));"
+      document.body.style.color = "white"
+      document.getElementById("dark_image").setAttribute("src", "./WiOS_White_NoBG.png");
+      document.getElementById("dark_image2").setAttribute("src", "./WiOS_White_NoBG.png");
+      document.getElementById("change_card").style.backgroundColor = "black"
+
+      // document.body.style.backgroundColor = "linear-gradient(100deg,rgb(80, 84, 118),rgba(17, 73, 170, 0.64)) !important"
+      counter = 2;
+    }
+    else {
+      console.log("pressed")
+      document.body.style.color = "black"
+      document.getElementById("change_card").style.backgroundColor = "white"
+      document.getElementById("dark_image").setAttribute("src", "./logo-max-size.png");
+      document.getElementById("dark_image2").setAttribute("src", "./logo-max-size.png");
+      document.body.style.backgroundColor = ""
+      counter = 1;
+    }
+
+
+  }
+</script>
+<script>
+  const loaderContainer = document.querySelector('.loader-container');
+  window.addEventListener('load', () => {
+    loaderContainer.style.display = 'none';
+});
+</script>
+</html>
