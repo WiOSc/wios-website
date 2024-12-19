@@ -1,1 +1,1 @@
-The revamped WIOS website: https://wios.co.in
+The revamped WIOS website: https://wiosvitap.in/
