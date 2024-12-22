@@ -10,7 +10,7 @@
 </div>
 
 ## Getting Started
-Read through our [Contribution Guidelines](CONTRIBUTIONS.md) before you contribute.
+Read through our [Contribution Guidelines](CONTRIBUTION.md) before you contribute.
 
 ## New to Contributions to Projects on Github?
 Read through this [Guide](https://docs.github.com/en) to understand get accustomed to Github terminologies and functions. This will help you get started.
