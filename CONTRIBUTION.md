@@ -2,6 +2,7 @@
 
 ## Before Contributing
 Welcome to [WiOSc/wios-website](https://github.com/WiOSc/wios-website/)! Before submitting a pull request, please ensure that you **read the guidelines thoroughly**. You can work on any of these [Issues](https://github.com/WiOSc/wios-website/issues), and if you are to find any other issues apart from those already mentioned, then inform one of the maintainers or reach out to the technical lead/co-lead/admins on Whatsapp. 
+This project is under the [MIT License](LICENSE)
 
 ## Contributing
 ### How to Contribute?
